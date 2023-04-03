@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.featured-post {
+    margin-top: 50px;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.post h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.post p {
+    margin: 0;
+}
+
+.post a {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
+/* Small devices (phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+    /* Adjust blog post layout for small screens */
+    .post {
+        flex-direction: column;
+    }
+    .post img {
+        width: 100%;
+    }
+    .post .post-content {
+        margin-top: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+    /* Adjust header and featured post layout for medium screens */
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .featured-post {
+        flex-direction: column;
+        align-items: center;
+    }
+    .featured-post img {
+        width: 100%;
+    }
+    .featured-post .post-content {
+        margin-top: 20px;
+    }
+}
+
+/* Large devices (desktops, 992px and below) */
+@media only screen and (max-width: 992px) {
+    /* Adjust layout for large screens */
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and above) */
+@media only screen and (min-width: 1200px) {
+    /* Adjust layout for extra large screens */
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+@keyframes myAnimation {
+    0% {
+        transform: scale(0) rotate(0deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+div {
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set max width for content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style social sharing buttons */
+.social-sharing {
+    margin-top: 20px;
+}
+
+.social-sharing a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.social-sharing .facebook {
+    background-color: #3B5998;
+}
+
+.social-sharing .twitter {
+    background-color: #1DA1F2;
+}
+
+.social-sharing .linkedin {
+    background-color: #0077B5;
+}
+
+/* Style font awesome icons */
+.social-sharing i {
+    font-size: 16px;
+}
+
+.social-sharing i.fa-facebook {
+    vertical-align: middle;
+}
+
+.social-sharing i.fa-twitter {
+    vertical-align: middle;
+}
+
+.social-sharing i.fa-linkedin {
+    vertical-align: middle;
+}
+
+/* Style header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline;
+    margin: 0 10px;
+    color: #000;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #3b5998; /* Facebook color */
+}
+
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+#form-row {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 30px 0 ;
+    margin: 0;
+
+}
+
+#form-row li {
+    margin-right: 10px;
+}
+.blog-posts,{
+
+    margin-bottom: 100px;
+
+
+}
+.blog-posts11,.blog-posts112,.blog-posts1123{
+
+    padding: 20px 0;
+}
+.share-buttons{padding: 30px 0;}
